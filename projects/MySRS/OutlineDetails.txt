@@ -1,0 +1,76 @@
+MySRSProject
+Created Friday 26 July 2024
+
+extra thoughts:
+search bar for tasks through name or file path.
+
+1. SPLIT VIEW
+
+1. I'll make the gui a split view, left and right side have a pane. 
+2. Left side: will be the tasks that have been scheduled there and have not been completed yet. 
+3. Right side: will be an overview of the tasks that will get scheduled soon.
+
+to be done:
+- SPLITVIEW GUI
+- LEFT SIDE:   tasks to be done
+- RIGHT SIDE:   tasks to be scheduled
+
+
+2. ORDERING
+
+1. Both panes's tasks will be ordered accordingly: 
+2. it will first be ordered on the closest day, to the current day, so if it's 16th today then at the left all tasks of 16th will show up first and on the right side the tasks that will be scheduled first will get showed first.
+3. secondly, the items of the days them selves will also get ordered by how many times they have been already scheduled before. for example, if a task has been only scheduled for the first time then that one will get most priority, and the one that has been scheduled the most already will get the least priority.
+
+to be done:
+- 2 ORDERINGS
+
+- FIRST:    closest day  ->  current day   |   most priority
+- SECOND:    least time scheduled    |    most priority
+priority means closest to top listing.
+
+
+3. INFORMATION
+each task will have a set of information 
+NAME: name of task
+REP STATUS: displays the repetition status
+- example,  3  :  1  |  2  |  4  |  X
+- (3) before :  this is how many times it already has been completed before
+- (1 | 2 | 4 | X) after :  this is the interval history of the task, the X will be calculated with the current day which will update if a day passes. 
+- when hovered it will display a tool tip showing more information, the actual days between the intervals.
+FILEPATH or WEBSITE:  this will show the file path and it will be clickable, this is to make it so that the user has fast access to the task at hand.
+EDITING ICON:   this will allow for the user to update the name or filepath whenever they want.
+DESCRIPTION:   these will be displayed inside of the hoverable or clickable menu.
+TOPIC:    these will be displayed inside of the hoverable or clickable menu.
+UNIQUE-ID:   to avoid the system getting confused with names, I'll make a short unique ID that will be calculated with the name and rep status 
+task left only COMPLETION button:   this activates a small window that will ask the user to either schedule it again or delete or it.
+
+
+4. CLICKABLE INFO
+when a task is clicked on, it will show a tool tip that contains a few things.
+1. Button to delete it. This feature is essential as I don't want tasks mostly for longer than.
+2. TOPIC, see above. when I finish the base project I'll improve on this feature by adding folder system to keep the work space more organized.
+3. Description, see above.
+
+
+
+
+Core Concepts and Technologies
+HTML & CSS:
+
+Basic structure and styling of the app.
+Flexbox or CSS Grid for layout (split view).
+
+JavaScript:
+
+DOM Manipulation: To dynamically update the UI.
+Event Handling: To handle clicks and other user interactions.
+Local Storage or IndexedDB: To store tasks data persistently in the browser.
+Date and Time Manipulation: Using Date objects to calculate intervals.
+Frameworks/Libraries (optional but recommended):
+
+React or Vue.js: To manage the state and UI efficiently.
+Bootstrap or Tailwind CSS: To make styling easier and more consistent.
+Basic Backend (optional initially):
+
+Node.js with Express for a simple server if decide to add server-side functionality later.
