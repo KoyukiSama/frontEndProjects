@@ -1,0 +1,3 @@
+Problem: Write a function that takes two numbers and returns their sum.
+function takes 2 numbers
+returns sum
