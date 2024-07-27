@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: proxima-nova, Helvetica, Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-left: -8px;
+      margin-top: -8px;
+      width: 102%;
+      color: rgb(41, 43, 44);
+  
+      background: "~/Downloads/broccoliImageForWeb.jpg";
+  }
+  
+  /* HEADER */
+  
+  header {
+    height: 200px;
+    padding-top: 1em;
+    padding-left: 5em;
+  
+    display: flex;
+    justify-content: center;
+    flex-wrap: no-wrap;
+  
+    overflow: clip;
+  
+    background: linear-gradient(-45deg, #a0cc71, #00b1b3);
+  }
+  
+  .flex-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: no-wrap;
+  }
+  
+  .flex-img {
+    display: flex;
+    justify-content: end;
+    flex-wrap: no-wrap;
+    margin: 0;
+  }
+  
+  .image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .16), 0 8px 13px rgba(0, 0, 0, .1), 0 18px 23px rgba(0, 0, 0, .1);
+    color: white;
+  }
+  
+  small {
+    color: #292b2c;
+    text-shadow: 1px 2px 0 rgba(70, 74, 76, .22);
+    font-weight: 600;
+  }
+  
+  figcaption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  
+  /* NAVBAR */
+  
+  nav {
+    position: sticky;
+  
+    background-color: #efefef;
+    box-shadow: 1px 1px 10px 1px rgba(93,93,93,.54);
+  }
+  
+  .nav-main {
+    border-top: 1px solid rgb(214, 214, 214) ;
+    margin: 0px;
+  } 
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li {
+    list-style: none;
+    color: rgb(119, 119, 119);
+  
+    font-size: 14px;
+    letter-spacing: 1px;
+  
+  
+    padding: 1.5em 3em;
+    border-left: 1px solid rgb(214, 214, 214);
+    
+  }
+  
+  li:last-of-type {
+    border-right: 1px solid rgb(214, 214, 214);
+  }
+  
+  li:hover {
+    background-color: #00b1b3;
+    color: white;
+    cursor: pointer;
+  }
+  
+  li:active {
+    background-color: white;
+    color: #00b1b3;
+    border: 1px solid #00b1b3;
+  }
+  
+  
+  /* MAIN */
+  
+  .tribute-info {
+    color: white;
+    background: linear-gradient(-45deg, #a0cc71, #00b1b3);
+  
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 24.5px;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .1), 0 8px 13px rgba(0, 0, 0, .1), 0 18px 23px rgba(0, 0, 0, .1);
+  
+    border: 2px solid rgb(0,144,148);
+    border-radius: 3px;
+  
+    width: 650px;
+    max-width: 70%;
+    margin: 3em auto 0;
+    padding: 1em 2em;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .tribute-link {
+    color: rgb(0,144,148);
+    text-decoration: underline dashed 1px;
+  }
+  
+  .tribute-link:hover {
+    color: rgb(0,80,88);
+    text-decoration: underline 1px;
+  }
+  
+  .tribute-link:active {
+    color: #00c1c3;
+    text-decoration: underline 1px;
+  }
+  
+  .tribute-link:visited {
+    color: #a031f3;
+  }
+  
+  
+  /* FOOTER */
