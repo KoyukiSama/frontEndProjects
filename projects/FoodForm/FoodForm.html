@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <title>Nutrition Survey Forum</title>
+    <link href="FoodForm.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="body-overlay">
+    </div>
+    <!-- Page info -->
+    <section class="page-info">
+    <h1 id="title">Nutrition Survey</h1>
+    <p id="description">This is a form        <strong>questionare</strong> that will survey  you about your <strong>healthy habits</strong>, especially <strong>nutrition</strong>.</p>
+    </section>
+
+    <!-- Form -->
+    <form id="survey-form">
+
+      <!-- User Data -->
+      <section class="user-data">
+      
+      <fieldset>
+        <legend><h3>User info</h3></legend>
+        <label id="name-label" for="name">Username:* <input id="name" type="text" name="user-data" required 	placeholder="user18"/> </label>
+        <label id="email-label" for="number">Age:* <input id="number" type="number" name="user-data" placeholder="21" required min="0" max="130"/></label>
+        <label id="number-label" for="email">Email:* <input id="email" type="email" name="user-data" required placeholder="username@mail.com"/></label>
+      </fieldset>
+    </section>
+
+    <!-- Nutrition -->
+    <h2>-------------Diet--------------</h2>
+    <section class="nutrition">
+      
+      <!-- Diet Type -->
+      <fieldset class="diet-type">
+        <legend><h3>Diet, closest to resemble yours?</h3></legend>
+
+        <label for="standart-american-diet"><input id="standart-american-diet" type="radio" name="diet" value="standart-american-diet" checked/>Standart american diet</label>
+
+        <label for="carnivore"><input id="carnivore" type="radio" name="diet" value="carnivore"/>Carnivore</label>
+
+        <label for="low-carb"><input id="low-carb" type="radio" name="diet" value="low-carb"/>Low-carb</label>
+
+        <label for="healthy-omnivore"><input id="healthy-omnivore" type="radio" name="diet" value="healthy-omnivore"/>Healthy omnivore</label>
+
+        <label for="keto"><input id="keto" type="radio" name="diet" value="keto"/>Keto</label>
+
+        <label for="pescetarian"><input id="pescetarian" type="radio" name="diet" value="pescetarian"/>Pescetarian</label>
+
+        <label for="lacto-ovo-vegetarian"><input id="lacto-ovo-vegetarian" type="radio" name="diet" value="lacto-ovo-vegetarian"/>Lacto-ovo-vegetarian</label>
+
+        <label for="ovo-vegetarian"><input id="ovo-vegetarian" type="radio" name="diet" value="ovo-vegetarian"/>Ovo-vegetarian</label>
+
+        <label for="lacto-vegetarian"><input id="lacto-vegetarian" type="radio" name="diet" value="lacto-vegetarian"/>Lacto-vegetarian</label>
+
+        <label for="vegan"><input id="vegan" type="radio" name="diet" value="vegan"/>Vegan</label>
+
+        <label for="whole food plant-based"><input id="whole food plant-based" type="radio" name="diet" value="whole food plant-based"/>Whole food plant-based</label>
+
+        <label for="whole food plant-based sos-free"><input id="whole food plant-based sos-free" type="radio" name="diet" value="whole food plant-based sos-free"/>Whole food plant-based sos-free</label>
+      </fieldset>
+
+      
+      <!-- Foods commonly eaten -->
+      <fieldset class="foods">
+        
+        <legend><h3>Do you, how many times a day eat this?</h3></legend>
+        <section class="refined-n-meat-products">
+
+        <!-- Processed-food -->
+        <label for="processed-food">
+          <input id="processed-food" type="checkbox" name="common-foods" value="processed-food"/> Processed-food / Junk food</label>
+        <label for="processed-food-count">
+          <select id="processed-food-count" name="common-food" value="processed-food-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Processed-meat -->
+        <label for="processed-meat">
+          <input id="processed-meat" type="checkbox" name="common-foods" value="processed-meat"/> Processed-foods </label>
+        <label for="processed-meat-count">
+          <select id="processed-meat-count" name="common-foods" value="processed-meat-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Red meat -->
+        <label for="red-meat">
+          <input id="red-meat" type="checkbox" name="common-foods" value="red-meat"/> Red meat</label>
+        <label for="red-meat-count">
+          <select id="red-meat-count" name="common-foods" value="red-meat-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Lean meat -->
+        <label for="lean-meat">
+          <input id="lean-meat" type="checkbox" name="common-foods" value="lean-meat"/> Lean meat</label>
+        <label for="lean-meat-count">
+          <select id="lean-meat-count" name="common-foods" value="lean-meat-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Sea food -->
+        <label for="sea-food">
+          <input id="sea-food" type="checkbox" name="common-foods" value="sea-food"/> Sea food</label>
+        <label for="sea-food-count">
+          <select id="sea-food-count" name="common-foods" value="sea-food-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Eggs -->
+        <label for="eggs">
+          <input id="eggs" type="checkbox" name="common-foods" value="eggs"/> Eggs</label>
+        <label for="eggs-count">
+          <select id="eggs-count" name="common-foods" value="eggs-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Dairy products -->
+        <label for="dairy">
+          <input id="dairy" type="checkbox" name="common-foods" value="dairy"/> Dairy</label>
+        <label for="dairy-count">
+          <select id="dairy-count" name="common-foods" value="dairy-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Fruit Juice-->
+        <label for="fruit-juice">
+          <input id="fruit-juice" type="checkbox" name="common-foods" value="fruit-juice"/> Fruit juice</label>
+        <label for="fruit-juice-count">
+          <select id="fruit-juice-count" name="common-foods" value="fruit-juice-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Soft Drinks-->
+        <label for="soft-drinks">
+          <input id="soft-drinks" type="checkbox" name="common-foods" value="soft-drinks"/> Soft drinks</label>
+        <label for="soft-drinks-count">
+          <select id="soft-drinks-count" name="common-foods" value="soft-drinks-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Alcohol -->
+        <label for="alcohol">
+          <input id="alcohol" type="checkbox" name="common-foods" value="alcohol"/> Alcohol</label>
+        <label for="alcohol-count">
+          <select id="alcohol-count" name="common-foods" value="alcohol-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Caffeinated Coffee -->
+        <label for="caffeinated-coffee">
+          <input id="caffeinated-coffee" type="checkbox" name="common-foods" value="caffeinated-coffee"/> Caffeinated coffee</label>
+        <label for="caffeinated-coffee-count">
+          <select id="caffeinated-coffee-count" name="common-foods" value="caffeinated-coffee-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Protein Powder -->
+        <label for="protein-powder">
+          <input id="protein-powder" type="checkbox" name="common-foods" value="protein-powder"/> Protein powder</label>
+        <label for="protein-powder-count">
+          <select id="protein-powder-count" name="common-foods" value="protein-powder-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Sugar or refined grain products -->
+        <label for="sugar">
+          <input id="sugar" type="checkbox" name="common-foods" value="sugar"/> Refined sugar or Refined grain products</label>
+        <label for="sugar-count">
+          <select id="sugar-count" name="common-foods" value="sugar-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+        <label for="oil">
+          <input id="oil" type="checkbox" name="common-foods" value="oil"/> Oils</label>
+        <label for="oil-count">
+          <select id="oil-count" name="common-foods" value="oil-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Salt -->
+        <label for="salt">
+          <input id="salt" type="checkbox" name="common-foods" value="salt"/> Salt</label>
+        <label for="salt-count">
+          <select id="salt-count" name="common-foods" value="salt-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Ciggarettes -->
+        <label for="ciggarettes">
+          <input id="ciggarettes" type="checkbox" name="common-foods" value="ciggarettes"/> Ciggarettes</label>
+        <label for="ciggarettes-count">
+          <select id="ciggarettes-count" name="common-foods" value="ciggarettes-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Other Drugs -->
+        <label for="other-drugs">
+          <input id="other-drugs" type="checkbox" name="common-foods" value="other-drugs"/> Other Drugs</label>
+        <label for="other-drugs-count">
+          <select id="other-drugs-count" name="common-foods" value="other-drugs-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+        </section>
+
+        <section class="whole-foods">
+        <!-- Whole big fruits -->
+        <label for="big-fruits">
+          <input id="big-fruits" type="checkbox" name="common-foods" value="big-fruits"/> Whole big fruits</label>
+        <label for="big-fruits-count">
+          <select id="big-fruits-count" name="common-foods" value="big-fruits-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Whole berries -->
+        <label for="berries">
+          <input id="berries" type="checkbox" name="common-foods" value="berries"/> Whole berries</label>
+        <label for="berries-count">
+          <select id="berries-count" name="common-foods" value="berries-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Green leafies -->
+        <label for="green-leafies">
+          <input id="green-leafies" type="checkbox" name="common-foods" value="green-leafies"/> Green leafies</label>
+        <label for="green-leafies-count">
+          <select id="green-leafies-count" name="common-foods" value="green-leafies-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Cruciferous vegetables -->
+        <label for="cruciferous">
+          <input id="cruciferous" type="checkbox" name="common-foods" value="cruciferous"/> Cruciferous vegetables</label>
+        <label for="cruciferous-count">
+          <select id="cruciferous-count" name="common-foods" value="cruciferous-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Root vegetables, excluding potatoes/yams -->
+        <label for="root">
+          <input id="root" type="checkbox" name="common-foods" value="root"/> Root vegetables, excluding potatoes/yams</label>
+        <label for="root-count">
+          <select id="root-count" name="common-foods" value="root-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Other vegetables, excluding potatoes/yams -->
+        <label for="other-vegetables">
+          <input id="other-vegetables" type="checkbox" name="common-foods" value="other-vegetables"/> Other vegetables, excluding potatoes/yams</label>
+        <label for="other-vegetables-count">
+          <select id="other-vegetables-count" name="common-foods" value="other-vegetables-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- White or brown mushrooms -->
+        <label for="mushrooms">
+          <input id="mushrooms" type="checkbox" name="common-foods" value="mushrooms"/> White or brown mushrooms</label>
+        <label for="mushrooms-count">
+          <select id="mushrooms-count" name="common-foods" value="mushrooms-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Special mushrooms -->
+        <label for="special-mushrooms">
+          <input id="special-mushrooms" type="checkbox" name="common-foods" value="special-mushrooms"/> Special mushrooms</label>
+        <label for="special-mushrooms-count">
+          <select id="special-mushrooms-count" name="common-foods" value="special-mushrooms-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Whole grains, including potatoes/yams -->
+        <label for="starch">
+          <input id="starch" type="checkbox" name="common-foods" value="starch"/> Whole grains, including potatoes/yams</label>
+        <label for="starch-count">
+          <select id="starch-count" name="common-foods" value="starch-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Legumes, including chickpeas, lentils, peas -->
+        <label for="legumes">
+          <input id="legumes" type="checkbox" name="common-foods" value="legumes"/> Legumes, including chickpeas, lentils, peas</label>
+        <label for="legumes-count">
+          <select id="legumes-count" name="common-foods" value="legumes-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Nuts and seeds, including peanuts and nut butters, but not peanut butter, -->
+        <label for="nuts-seeds">
+          <input id="nuts-seeds" type="checkbox" name="common-foods" value="nuts-seeds"/> Nuts and seeds</label>
+        <label for="nuts-seeds-count">
+          <select id="nuts-seeds-count" name="common-foods" value="nuts-seeds-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Spices, no salt -->
+        <label for="spices">
+          <input id="spices" type="checkbox" name="common-foods" value="spices"/> spices, no salt</label>
+        <label for="spices-count">
+          <select id="spices-count" name="common-foods" value="spices-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Water-->
+        <label for="water">
+          <input id="water" type="checkbox" name="common-foods" value="water"/> Water</label>
+        <label for="water-count">
+          <select id="water-count" name="common-foods" value="water-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Vinegar -->
+        <label for="vinegar">
+          <input id="vinegar" type="checkbox" name="common-foods" value="vinegar"/> Vinegar</label>
+        <label for="vinegar-count">
+          <select id="vinegar-count" name="common-foods" value="vinegar-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Decaff coffee -->
+        <label for="decaff-coffee">
+          <input id="decaff-coffee" type="checkbox" name="common-foods" value="decaff-coffee"/> Decaff coffee</label>
+        <label for="decaff-coffee-count">
+          <select id="decaff-coffee-count" name="common-foods" value="decaff-coffee-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Filter coffee -->
+        <label for="filter-coffee">
+          <input id="filter-coffee" type="checkbox" name="common-foods" value="filter-coffee"/> Filter coffee</label>
+        <label for="filter-coffee-count">
+          <select id="filter-coffee-count" name="common-foods" value="filter-coffee-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Green, oolong, black, matcha thee -->
+        <label for="green-thee">
+          <input id="green-thee" type="checkbox" name="common-foods" value="green-thee"/> Green, oolong, black, matcha thee</label>
+        <label for="green-thee-count">
+          <select id="green-thee-count" name="common-foods" value="green-thee-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Herbal thee -->
+        <label for="Herbal-thee">
+          <input id="Herbal-thee" type="checkbox" name="common-foods" value="Herbal-thee"/> Herbal thee</label>
+        <label for="Herbal-thee-count">
+          <select id="Herbal-thee-count" name="common-foods" value="Herbal-thee-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Plant milks, excluding soy -->
+        <label for="plant-milks">
+          <input id="plant-milks" type="checkbox" name="common-foods" value="plant-milks"/> Plant milks, excluding soy</label>
+        <label for="plant-milks-count">
+          <select id="plant-milks-count" name="common-foods" value="plant-milks-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        <!-- Soy milk -->
+        <label for="soy-milk">
+          <input id="soy-milk" type="checkbox" name="common-foods" value="soy-milk"/> Soy milk</label>
+        <label for="soy-milk-count">
+          <select id="soy-milk-count" name="common-foods" value="soy-milk-count">
+            <option>0</option><option>1</option><option>2</option>
+            <option>3</option><option>4</option><option>4+</option>
+          </select>
+        </label>
+
+        </section>
+      </fieldset>
+
+      <!-- Pattern of Eating-->
+      
+      <fieldset>
+        <legend><h3>Pattern of eating</h3></legend>
+        <label for="dropdown">meals a day 
+          <select id="dropdown" name="eating-pattern">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>5+</option>
+          </select>
+        </label>
+        <label for="snacks">snacks a day 
+          <select id="snacks"  name="eating-pattern">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>5+</option>
+          </select>
+        </label>
+        <label for="time-of-eating"> Time of eating all meals
+          <select id="time-of-eating"  name="eating-pattern">
+            <option>on waking up</option>
+            <option>4 hours after waking up</option>
+            <option>8 hours after waking up</option>
+            <option>12 hours evening</option>
+            <option>spread around the day</option>
+          </select>
+        </label>
+      </fieldset>
+    </section>
+
+  <!-- exercise -->
+  <section class="opinion">
+    <h2>-------------Exercise--------------</h2>
+      <fieldset>
+        <legend><h3>Types of exercise</h3></legend>
+        <label><input id="endurance-cardio" type="checkbox" name="exercise-type" value="endurance-cardio"/> Endurance Cardio</label>
+
+        <label><input id="sprint-hit-cardio" type="checkbox" name="exercise-type" value="sprint-hit-cardio"/> Sprint/Hit Cardio</label>
+
+        <label><input id="strength-training" type="checkbox" name="exercise-type" value="strength-training"/> Strength training</label>
+
+        <label><input id="flexibility" type="checkbox" name="exercise-type" value="flexibility"/> Flexibility (yoga)</label>
+
+        <label><input id="walks" type="checkbox" name="exercise-type" value="walks"/> Walks</label>
+
+        <label><input id="sauna" type="checkbox" name="exercise-type" value="sauna"/> Sauna</label>
+      </fieldset>
+      <fieldset>
+        <legend><h3>How frequently do you exercise</h3></legend>
+        <label for="exercise-frequency">Times a week, exercise 
+          <input id="exercise-frequency" type="number" name="exercise-frequency" min=0 max=60 placeholder="3"/>
+        </label>
+        <label for="walks-frequency">Times a week, walks 
+          <input id="walks-frequency" type="number" name="walks-frequency" min=0 max=60 placeholder="7"/>
+        </label>
+      </fieldset>
+    </section>
+
+    <!-- sleep -->
+    <h2>-------------Sleep--------------</h2>
+    <section class="sleep">
+      <fieldset>
+        <legend><h3>Sleep</h3></legend>
+        <label for="sleep-quantity">Sleep quantity (hours / day) 
+          <input id="sleep-quantity" type="number" name="sleep-quantity" min=0 max=18 placeholder="9"/>
+        </label>
+        <label for="sleep-quality">Sleep quality 
+          <select id="sleep-quality" name="sleep-quality">
+            <option>poor</option>
+            <option>meh</option>
+            <option>okay</option>
+            <option>good</option>
+            <option>excellent</option>
+          </select>
+        </label>
+      </fieldset>
+    </section>
+
+<h2>-------------Opinion--------------</h2>
+    <!-- Opinion -->
+    <section class="opinion">
+      <fieldset>
+        <legend><h3>Any thoughts?</h3></legend>
+        <label for="thoughts"><textarea id="thoughts" name="thoughts" placeholder="Thoughts, What is your stance on nutrition, exercise and sleep for health? Do you suffer from any ailments, and do you think that's related to lifestyle?" cols="50" rows="5"></textarea><label>
+      </fieldset>
+    <section>
+    <section class="submit">
+      <label for="submit"><input id="submit" type="submit" name="submit"/></label>
+    </section>
+    </form>
+  </body>
+</html>

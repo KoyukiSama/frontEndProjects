@@ -1,0 +1,149 @@
+body {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwtop.com%2Fwp-content%2Fuploads%2F2018%2F05%2FAP_961192606893-4096x2731.jpg&f=1&nofb=1&ipt=389fead6db5184f227d75164361e7b9ad17404eefbaca289a9f3b7a873b947d4&ipo=images");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+    background-position: center; /* Centers the background image */
+    padding: unset;
+  }
+  
+  .body-overlay {
+    background-color: rgba(255, 125, 110, 0.7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .page-info {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 3em;
+    position: relative;
+    z-index: 2;
+  
+    color: white;
+    text-shadow: 2px 2px 5px maroon;
+  }
+  
+  h1, p {
+    font-family: 'roboto', serif;
+    background-color: rgba(255, 125, 110, 0.7);
+    width: 100%;
+    
+  }
+  
+  form {
+    border: 0.25em solid maroon;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(255, 35, 35, 0.4), rgba(255, 35, 35, 0.4)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwoodreviewerrbx.files.wordpress.com%2F2021%2F03%2Fnew-normal.png%3Fw%3D300&f=1&nofb=1&ipt=aebbab0df247aa7dd165f09a5a5bffcd460bdcafb15da0b26b7744d94bcb5226&ipo=images");
+    background-color: brown;
+    
+    color: white;
+    text-shadow: 2px 1px maroon;
+  
+    max-width: 700px;
+    width: 80%;
+    margin: 2em auto;
+    padding: 2em 3em;
+  
+    z-index: 2;
+    position: relative;
+  }
+  
+  fieldset {
+    margin-bottom: 2em;
+    text-align: left;
+    padding-left: 3.5%;
+    padding-top: 1.50em;
+    padding-bottom: 1.50em;
+  
+    background-image: linear-gradient(rgba(255, 50, 70, 0.3), rgba(255, 50, 70, 0.3)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwoodreviewerrbx.files.wordpress.com%2F2021%2F03%2Fnew-normal.png%3Fw%3D300&f=1&nofb=1&ipt=aebbab0df247aa7dd165f09a5a5bffcd460bdcafb15da0b26b7744d94bcb5226&ipo=images");
+  
+    border: unset;
+    border-left: 3px solid maroon;
+    border-right: 3px solid maroon;
+    border-radius: 7.5px;
+  }
+  
+  legend {
+    text-align: center;
+    padding-right: 1rem;
+  
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h2 {
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  
+  h3 {
+    margin: unset;
+    padding: unset;
+  }
+  
+  label {
+    display: block;
+    margin-left: 7.5px;
+    margin-top: 1.10rem;
+    margin-bottom: 1.10rem;
+  
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  .diet-type input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  select {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  
+    color: white;
+    background-color: brown;
+    border-color: maroon;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    color: maroon;
+    background-color: white;
+    border-color: maroon;
+    border-radius: 5px;
+    font-size: 0.9em;
+    width: 97.5%;
+    padding: 0.5em;
+  }
+  
+  input[type="radio"], input[type="checkbox"]{
+    transform: scale(1.25);
+  }
+  
+  input[type="text"], input[type="number"], input[type="email"] {
+    height: 25px;
+    font-size: 1.25rem;
+    margin-left: 5px;
+  
+    color: white;
+    background-color: brown;
+    border: 1px solid maroon;
+    border-radius: 5px;
+  }
+  
+  input[type="text"]::placeholder, input[type="number"]::placeholder, [type="email"]::placeholder {
+    color: rgba(255,255,255,0.65);
+  }
+  
+  
+  input[type="text"] {
+    width: 25%;
+  }
+  
+  input[type="number"] {
+    width: 10%;
+  }
