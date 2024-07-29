@@ -13,6 +13,10 @@ body {
     color: rgb(41, 43, 44);
 }
 
+main {
+  background: linear-gradient(180deg, #ffffff 95%, #a0cc71);
+}
+
 /* HEADER */
 
 header {
@@ -44,11 +48,11 @@ header {
   margin: 0;
 }
 
-.image {
-  max-width: 100%;
-  display: flex;
+#image {
+  display: block;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 }
 
 h1 {
@@ -80,6 +84,7 @@ figcaption {
 
 nav {
   position: sticky;
+  top: 0;
 
   background-color: #efefef;
   box-shadow: 1px 1px 10px 1px rgba(93,93,93,.54);
@@ -97,6 +102,22 @@ ul {
   align-items: center;
 }
 
+ul > a {
+  text-decoration: none;
+}
+
+ul > a:visited {
+  text-decoration: none;
+}
+
+ul > a:hover {
+  text-decoration: none;
+}
+
+ul > a:active {
+  text-decoration: none;
+}
+
 li {
   list-style: none;
   color: rgb(119, 119, 119);
@@ -107,7 +128,6 @@ li {
 
   padding: 1.5em 3em;
   border-left: 1px solid rgb(214, 214, 214);
-  
 }
 
 li:last-of-type {
@@ -217,6 +237,121 @@ quoteblock {
 
 quoteblock > a {
   text-decoration: none;
+}
+
+  /* DAILY DOZEN*/
+
+.daily-dozen {
+  max-width: 600px;
+  border: 5px double 
+  rgb(0,102,122);
+  border-radius: 15px;
+  margin: 6em auto 0;
+  color: rgb(0,122,82);
+  background: linear-gradient(170deg,#e0fcc1 20%, #b0ec41);
+}
+
+.daily-dozen > h2 {
+  margin: 1em auto 0.5em;
+  color: #d021f3;
+}
+
+.daily-dozen > p {
+  text-align: center;
+  margin-bottom: 1.5em;
+  color: #d021f3;
+}
+
+.daily-dozen > div {
+  border: 0px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dailyd {
+  width: 45%;
+  border: 2px solid;
+  border-radius: 20px;
+  margin: 0 auto 1em;
+
+  display: flex;
+
+  background-color: white;
+
+}
+
+.dailyd-img {
+  width: 25%;
+  border-right: 0px solid;
+  padding: 0.30em;
+  margin-left: 0.50em;
+  margin-right: 0.50em;
+  margin-top: 0.15em;
+  margin-bottom: 0.15em;
+}
+
+.dailyd-display {
+  border-left: 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding-left: 0.5em;
+}
+
+.daild-text {
+  /* border: 2px solid;
+   background-color: pink; */
+  margin: 0;
+  font-size: 1.35em;
+  padding-top: 2px;
+  width: 200px;
+}
+
+.daild-servings {
+  /* border: 2px solid;
+  background-color: pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  height: 100%;
+  gap: 2.5px;
+}
+
+.dailyd-ball {
+  border: 2px solid rgb(0,122,82);
+  border-radius: 50%;
+  background-color: white;
+  width: 27.5px;
+  height: 27.5px;
+}
+
+.daily-dozen > .link {
+  display: block;
+  margin: 3em auto 2em;
+  color: #a021d3;
+}
+
+.daily-dozen > p > a {
+  color: #d021f3;
+  font-weight: 600;
+}
+
+.daily-dozen > legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto;
+  color: #a021d3;
+  font-weight: 600;
+}
+
+.daily-dozen > legend > div{
+  margin-right: 2px;
+  border-color: #a021d3;
 }
 
 /* FOOTER */
