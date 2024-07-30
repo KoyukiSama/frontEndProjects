@@ -12,11 +12,6 @@ body {
     width: 102%;
     color: rgb(41, 43, 44);
 }
-
-main {
-  background: linear-gradient(180deg, #ffffff 95%, #a0cc71);
-}
-
 /* HEADER */
 
 header {
@@ -154,6 +149,7 @@ li:active {
 .tribute-info {
   color: white;
   background: linear-gradient(-45deg, #a0cc71, #00b1b3);
+  box-shadow: 1px 1px 10px 5px rgba(93,93,93,.54);
 
   font-size: 18px;
   letter-spacing: 1px;
@@ -246,9 +242,12 @@ quoteblock > a {
   border: 5px double 
   rgb(0,102,122);
   border-radius: 15px;
-  margin: 6em auto 0;
+  margin: 6em auto 8em;
   color: rgb(0,122,82);
   background: linear-gradient(170deg,#e0fcc1 20%, #b0ec41);
+  border-top: 2px solid rgb(0,133,155);
+  border-bottom: 2px solid rgb(0,102,122);
+  box-shadow: 1px 1px 10px 2px rgba(93,93,93,.54);
 }
 
 .daily-dozen > h2 {
@@ -297,7 +296,7 @@ quoteblock > a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  width: 70%;
   padding-left: 0.5em;
 }
 
@@ -329,6 +328,25 @@ quoteblock > a {
   height: 27.5px;
 }
 
+.daild-servings > div > img {
+  height: 22.5px;
+  margin-top: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.three-servings {
+  margin-left: 2.75em;
+}
+
+.two-servings {
+ margin-left: 4.75em;
+}
+
+.one-serving {
+  margin-left:6.65em;
+}
+
 .daily-dozen > .link {
   display: block;
   margin: 3em auto 2em;
@@ -354,4 +372,61 @@ quoteblock > a {
   border-color: #a021d3;
 }
 
+/* info daily dozen */
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  background: white;
+  border: 2px solid;
+  border-radius: 7.5px;
+  width: 20em;
+  margin-top: 48px;
+  
+  box-shadow: 1px 2px 7px darkgreen;
+  padding: 0.25em 0.5em;
+}
+
+.info-icon:hover .tooltip{
+  visibility: visible;
+}
+
+.right-side {
+  margin-left: -14em;
+}
+
 /* FOOTER */
+
+footer {
+  height: 8em;
+  width: 102%;
+  padding-top: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+  margin-bottom: -8px;
+  box-shadow: -1px -1px 10px 2px rgba(93,93,93,.54);
+  border-top: 2px solid rgb(0, 144, 148);
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+
+  background: linear-gradient(-45deg, #a0cc71, #00b1b3);
+}
+
+footer > h2 > a, a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+footer > h2 > a:hover {
+  color: #a021f3;
+  text-decoration: underline;
+}
+
+footer > h2 > a:active {
+  color: #d041f3;
+  text-decoration: underline;
+}
