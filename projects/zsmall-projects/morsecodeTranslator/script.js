@@ -199,7 +199,7 @@ function textMorseTrans(splittedArray) {
                     y++;
                 }
             }
-            translatedArray[i] = dummyArray.join('') // join with no spaces
+            translatedArray[i] = dummyArray.join('').toLowerCase() // join with no spaces
             i++;
         }
 
@@ -236,5 +236,3 @@ usrInputElement.addEventListener("input", function() {
 });
     
 });
-
-// start -> splits into arrays -> translate arrays -> join arrays into a string.
