@@ -10,6 +10,11 @@ String.prototype.isMorse = function () {
     return regex.test(this);
 }
 
+String.prototype.isMorseNoBs = function () {
+    let regex = /[\.\-]/;
+    return regex.test(this);
+}
+
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -49,17 +54,31 @@ function splitToArray(text) {
         // if morse char
         else if (text[i].isMorse()) {
             splittedArray[x] = ['m'];
-            for (let y = 1; i < text.length && text[i].isMorse(); y++) {
+            let y = 0;
+            while (i < text.length && text[i].isMorse()) {
                 // add all morse into string blocks
-                splittedArray[x][y] = [];
-                for (let z = 0; i < text.length && text[i].isMorse() && text[i] != ' '; z++) {
-                    splittedArray[x][y][z] = text[i];
+                if (text[i].isMorseNoBs()) {
+                    splittedArray[x][y] = [];
+                    for (let z = 0; i < text.length && text[i].isMorseNoBs() && text[i] != ' '; z++) {
+                        splittedArray[x][y][z] = text[i];
+                        i++;
+                    }
+                    splittedArray[x][y] = splittedArray[x][y].join('');
+                    y++;
+                }
+                else if (text[i] == '/') {
+                    splittedArray[x][y] = [];
+                    for (let z = 0; i < text.length && !text[i].isMorseNoBs() && text[i] != ' '; z++) {
+                        splittedArray[x][y][z] = text[i];
+                        i++;
+                    }
+                    splittedArray[x][y] = splittedArray[x][y].join('');
+                    y++;
+                }
+                else if (text[i] == ' ') {
                     i++;
                 }
-                if (text[i] == ' ') {
-                    i++;
-                }
-                splittedArray[x][y] = splittedArray[x][y].join('');
+                
             }
         }
           
