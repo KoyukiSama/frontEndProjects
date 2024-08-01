@@ -40,20 +40,21 @@ function splitToArray(text) {
     // check where the string or morse ends, endings are a letter, .-/ or null
     let i = 0, x = 0; // i is for text, x is for arrays
     while (i < text.length) {
-        console.log(`i: ${i}, c: ${text[i]}`);
           
         // if normal char
         if (text[i].isString()) {
-            splittedArray[x] = ['s']
-            i++;
+            splittedArray[x] = ['s'];
             for (let y = 1; text[i].isString(); y++) {
                 // add all words into blocks
                 splittedArray[x][y] = [];
-                for (let z = 0; text[i] != ' '; z++) {
+                for (let z = 0; i < text.length && text[i] != ' '; z++) {
                     splittedArray[x][y][z] = text[i];
                     i++;
                 }
-                splittedArray[x][y].join('');
+                if (text[i] == ' ') {
+                    i++;
+                }
+                splittedArray[x][y] = splittedArray[x][y].join('');
             }
             // if sentence ends with '.' skip it
             if (text[i].isSentence(text[i-1], text[i], text[i+1])) {
@@ -64,28 +65,32 @@ function splitToArray(text) {
           
         // if morse char
         else if (text[i].isMorse()) {
-            splittedArray[x] = ['m']
-            i++;
+            splittedArray[x] = ['m'];
             for (let y = 1; text[i].isMorse(); y++) {
                 // add all morse into string blocks
                 splittedArray[x][y] = [];
-                for (let z = 0; text[i] != ' '; z++) {
+                for (let z = 0; i < text.length && text[i] != ' '; z++) {
                     splittedArray[x][y][z] = text[i];
                     i++;
                 }
-                splittedArray[x][y].join('');
+                if (text[i] == ' ') {
+                    i++;
+                }
+                splittedArray[x][y] = splittedArray[x][y].join('');
             }
         }
           
         // if unknown char
         else {
-            splittedArray[i] = ['u']
-            i++;
+            splittedArray[i] = ['u'];
             for (let y = 1; !text[i].isString && !text[i].isMorse; y++) {
                 // add all morse into string blocks
                 splittedArray[x][y] = [];
-                for (let z = 0; text[i] != ' '; z++) {
+                for (let z = 0; i < text.length && text[i] != ' '; z++) {
                     splittedArray[x][y][z] = text[i];
+                    i++;
+                }
+                if (text[i] == ' ') {
                     i++;
                 }
                 splittedArray[x][y] = splittedArray[x][y].join('');
@@ -132,7 +137,7 @@ usrInputElement.addEventListener("input", function() {
         
     // usrOutputElement.textContent = morseCode;
 });
-
+    
 });
 
 // start -> splits into arrays -> translate arrays -> join arrays into a string.
