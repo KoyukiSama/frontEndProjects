@@ -1,4 +1,0 @@
-Write a function that finds 
-the maximum number in an array
-
-function finds max num in array
